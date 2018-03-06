@@ -37,12 +37,12 @@ static propTypes = {
 ```
 
 ## Utils:
-- [isEven](#isEven)
-- [isGreaterThan](#isGreaterThan)
-- [isLessThan](#isLessThan)
-- [isBetween](#isBetween)
+- [isEven](#iseven)
+- [isGreaterThan](#isgreaterthan)
+- [isLessThan](#islessthan)
+- [isBetween](#isbetween)
 - [includes](#includes)
-- [isRequiredWhen](#isRequiredWhen)
+- [isRequiredWhen](#isrequiredwhen)
 - more tbc
 
 ### isEven
