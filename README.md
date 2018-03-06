@@ -1,10 +1,19 @@
-# prop-type-utils
+# Prop Type Utils
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
-Describe prop-type-utils here.
+Prop Typ Utils is a collection of _useful_ prop type validation rules.
+
+## Rules:
+- isEven
+- isRequiredWhen
+- greaterThan
+- lessThan
+- isBetween
+- includes
+- more tbc
+
+# Docs and code coming soon!
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
