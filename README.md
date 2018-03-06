@@ -1,4 +1,4 @@
-#Prop Type Utils
+# Prop Type Utils
 
 [![npm package][npm-badge]][npm]
 
@@ -36,7 +36,7 @@ static propTypes = {
 }
 ```
 
-##Utils:
+## Utils:
 - [isEven](#isEven)
 - [isGreaterThan](#isGreaterThan)
 - [isLessThan](#isLessThan)
@@ -45,7 +45,7 @@ static propTypes = {
 - [isRequiredWhen](#isRequiredWhen)
 - more tbc
 
-###isEven
+### isEven
 
 ```javascript
 import isEven from 'prop-type-utils/isEven';
@@ -62,7 +62,7 @@ Foo.propTypes = {
 //Success
 ```
 
-###isGreaterThan
+### isGreaterThan
 
 ```javascript
 import isGreaterThan from 'prop-type-utils/isGreaterThan';
@@ -79,7 +79,7 @@ Foo.propTypes = {
 //Success
 ```
 
-###isLessThan
+### isLessThan
 
 ```javascript
 import isLessThan from 'prop-type-utils/isLessThan';
@@ -96,7 +96,7 @@ Foo.propTypes = {
 //Success
 ```
 
-###isBetween
+### isBetween
 
 ```javascript
 import isBetween from 'prop-type-utils/isBetween';
@@ -113,7 +113,7 @@ Foo.propTypes = {
 //Success
 ```
 
-###includes
+### includes
 
 ```javascript
 import includes from 'prop-type-utils/includes';
@@ -130,7 +130,7 @@ Foo.propTypes = {
 //Success
 ```
 
-###includes
+### includes
 
 ```javascript
 import includes from 'prop-type-utils/includes';
