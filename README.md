@@ -1,21 +1,53 @@
-# Prop Type Utils
+#Prop Type Utils
 
 [![npm package][npm-badge]][npm]
 
 Prop Typ Utils is a collection of _useful_ prop type validation rules.
 
-## Rules:
-- isEven
-- isGreaterThan
-- isLessThan
-- isBetween
-- includes
-- isRequiredWhen
-- more tbc
-
-### isEven
+Install
 
 ```
+npm i prop-type-utils
+```
+
+Use
+
+You can import the named utils from the main package:
+```javascript
+import { includes, isGreaterThan } from 'prop-type-utils';
+
+......
+
+static propTypes = {
+    age: isGreaterThan(18),
+    title: includes('cool')
+}
+```
+
+Or you can import the individual utils as you need them
+
+```javascript
+import isBetween from 'prop-type-utils/lib/isBetween';
+
+......
+
+static propTypes = {
+    score: isBetween(10, 60)
+}
+```
+
+##Utils:
+- [isEven](#isEven)
+- [isGreaterThan](#isGreaterThan)
+- [isLessThan](#isLessThan)
+- [isBetween](#isBetween)
+- [includes](#includes)
+- [isRequiredWhen](#isRequiredWhen)
+- more tbc
+
+###isEven
+
+```javascript
 import isEven from 'prop-type-utils/isEven';
 
 Foo.propTypes = {
@@ -30,9 +62,9 @@ Foo.propTypes = {
 //Success
 ```
 
-### isGreaterThan
+###isGreaterThan
 
-```
+```javascript
 import isGreaterThan from 'prop-type-utils/isGreaterThan';
 
 Foo.propTypes = {
@@ -47,9 +79,9 @@ Foo.propTypes = {
 //Success
 ```
 
-### isLessThan
+###isLessThan
 
-```
+```javascript
 import isLessThan from 'prop-type-utils/isLessThan';
 
 Foo.propTypes = {
@@ -64,9 +96,9 @@ Foo.propTypes = {
 //Success
 ```
 
-### isBetween
+###isBetween
 
-```
+```javascript
 import isBetween from 'prop-type-utils/isBetween';
 
 Foo.propTypes = {
@@ -81,9 +113,9 @@ Foo.propTypes = {
 //Success
 ```
 
-### includes
+###includes
 
-```
+```javascript
 import includes from 'prop-type-utils/includes';
 
 Foo.propTypes = {
@@ -98,9 +130,9 @@ Foo.propTypes = {
 //Success
 ```
 
-### includes
+###includes
 
-```
+```javascript
 import includes from 'prop-type-utils/includes';
 
 Foo.propTypes = {
