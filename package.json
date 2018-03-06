@@ -16,8 +16,7 @@
     "test:watch": "nwb test --server",
     "prepublish": "npm run clean && npm run build"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "nwb": "0.21.x"
   },
