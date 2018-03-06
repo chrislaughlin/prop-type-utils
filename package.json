@@ -1,6 +1,6 @@
 {
   "name": "prop-type-utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Describe prop-type-utils here",
   "main": "lib/index.js",
   "files": [
@@ -20,8 +20,8 @@
   "devDependencies": {
     "nwb": "0.21.x"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Chris Laughlin <bluntm@gmail.com>",
+  "homepage": "https://github.com/chrislaughlin/prop-type-utils",
   "license": "MIT",
-  "repository": ""
+  "repository": "https://github.com/chrislaughlin/prop-type-utils.git"
 }
