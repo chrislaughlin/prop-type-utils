@@ -18,7 +18,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "nwb": "0.21.x"
+    "nwb": "^0.21.5"
   },
   "author": "Chris Laughlin <bluntm@gmail.com>",
   "homepage": "https://github.com/chrislaughlin/prop-type-utils",
