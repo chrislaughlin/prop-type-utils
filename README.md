@@ -4,6 +4,10 @@
 
 Prop Typ Utils is a collection of _useful_ prop type validation rules.
 
+<img src="https://raw.githubusercontent.com/chrislaughlin/prop-type-utils/master/public/proptypeutils.png" alt="PropType Utils Logo" height="250px"/>
+
+Logo designed by [Liffy Designs](http://www.liffydesigns.co.uk/)
+
 Install
 
 ```
