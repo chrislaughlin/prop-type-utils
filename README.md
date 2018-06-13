@@ -134,10 +134,10 @@ Foo.propTypes = {
 //Success
 ```
 
-### includes
+### isRequiredWhen
 
 ```javascript
-import includes from 'prop-type-utils/includes';
+import includes from 'prop-type-utils/isRequiredWhen';
 
 Foo.propTypes = {
     isShowing: PropTypes.bool
@@ -158,6 +158,3 @@ Foo.propTypes = {
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
