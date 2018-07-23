@@ -1,6 +1,6 @@
 {
   "name": "prop-type-utils",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Prop Typ Utils is a collection of useful* prop type validation rules.",
   "main": "lib/index.js",
   "files": [
