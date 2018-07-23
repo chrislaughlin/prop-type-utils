@@ -47,7 +47,8 @@ static propTypes = {
 - [isBetween](#isbetween)
 - [includes](#includes)
 - [isRequiredWhen](#isrequiredwhen)
-- more tbc
+- [isRequiredWhenAll](#isrequiredwhenAll)
+- Have more? Raise a PR
 
 ### isEven
 
@@ -149,6 +150,32 @@ Foo.propTypes = {
 //Error
 
 <Foo isShowing={false} bar={null} />
+//Success
+
+```
+
+### isRequiredWhenAll
+
+```javascript
+import includes from 'prop-type-utils/isRequiredWhenAll';
+
+Foo.propTypes = {
+    isShowing: PropTypes.bool,
+    foo: PropTypes.string,
+    bar: isRequiredWhenAll(['isShowing', 'foo'])
+}
+
+//Examples
+<Foo isShowing={true} foo={true} bar={null} />
+//Error
+
+<Foo isShowing={true} foo={false} bar={null} />
+//Error
+
+<Foo isShowing={false} bar={null} />
+//Success
+
+<Foo isShowing={true} foo={true} bar={true} />
 //Success
 
 ```

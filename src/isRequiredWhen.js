@@ -1,7 +1,7 @@
 import errorBuilder from './utils/errorBuilder';
 
 /*
-    Return error if the prop value does not include the sub string
+    Return error if the provided prop exists
  */
 export default linkedPropName => (props, propName, componentName) => {
     const propValue = props[propName];
