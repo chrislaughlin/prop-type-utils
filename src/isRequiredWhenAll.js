@@ -1,6 +1,6 @@
 import errorBuilder from './utils/errorBuilder';
 
-const allPropsExist = (props, propList) => propList.every(prop => !prop[prop]);
+const allPropsExist = (props, propList) => propList.every(prop => props[prop]);
 
 /*
     Return error if the provided props exists
