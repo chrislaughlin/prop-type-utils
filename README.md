@@ -48,6 +48,7 @@ static propTypes = {
 - [includes](#includes)
 - [isRequiredWhen](#isrequiredwhen)
 - [isRequiredWhenAll](#isrequiredwhenAll)
+- [isOnlyOneAllowed](#isOnlyOneAllowed)
 - Have more? Raise a PR
 
 ### isEven
@@ -157,7 +158,7 @@ Foo.propTypes = {
 ### isRequiredWhenAll
 
 ```javascript
-import includes from 'prop-type-utils/isRequiredWhenAll';
+import isRequiredWhenAll from 'prop-type-utils/isRequiredWhenAll';
 
 Foo.propTypes = {
     isShowing: PropTypes.bool,
@@ -176,6 +177,32 @@ Foo.propTypes = {
 //Success
 
 <Foo isShowing={true} foo={true} bar={true} />
+//Success
+
+```
+
+### isOnlyOneAllowed
+
+```javascript
+import isOnlyOneAllowed from 'prop-type-utils/isOnlyOneAllowed';
+
+Foo.propTypes = {
+    isShowing: isOnlyOneAllowed(['isShowing','foo', 'bar']),
+    foo: isOnlyOneAllowed(['isShowing','foo', 'bar']),
+    bar: isOnlyOneAllowed(['isShowing','foo', 'bar'])
+}
+
+//Examples
+<Foo isShowing={true} foo={true} bar={null} />
+//Error
+
+<Foo isShowing={true} foo={true} bar={true} />
+//Error
+
+<Foo isShowing={false} bar={null} />
+//Success
+
+<Foo isShowing={true} foo={null} bar={null} />
 //Success
 
 ```
